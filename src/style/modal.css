@@ -1,0 +1,63 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.modal-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-container label {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.modal-container input[type="radio"],
+.modal-container input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.sub-reasons {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.actions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.actions button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.actions button[type="button"] {
+  background-color: #f44336;
+  color: white;
+}

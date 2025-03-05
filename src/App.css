@@ -1,0 +1,82 @@
+/* Reset global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Main app container */
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #121212;
+  color: white;
+  padding-top: 80px; /* Prevent content from hiding under the navbar */
+  text-align: center;
+}
+
+/* Page container */
+.page-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Home Page Styling */
+.home {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Posts Page Styling */
+.posts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Loader */
+.loader {
+  width: 40px;
+  height: 40px;
+  border: 5px solid white;
+  border-top: 5px solid #ffcc00;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app {
+    padding-top: 70px;
+  }
+
+  .home {
+    font-size: 20px;
+  }
+
+  .posts-container {
+    width: 95%;
+  }
+}

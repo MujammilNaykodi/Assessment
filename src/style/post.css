@@ -1,0 +1,53 @@
+/* Center the posts container */
+body, html {
+    height: 100%; /* Ensure full height for the page */
+    margin: 0; /* Remove default margin */
+    display: flex;
+    justify-content: center; /* Horizontally center the container */
+    align-items: center; /* Vertically center the container */
+     /* Optional: add background color */
+}
+
+.posts-container {
+    max-width: 500px;
+    width: 100%; /* Make sure it can shrink and grow based on the viewport */
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Stack the post cards vertically */
+    gap: 10px; /* Add space between posts */
+}
+
+/* Post card styles */
+.post-card {
+    background: #fff; /* White background for contrast */
+    color: black; /* Ensure text is visible */
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column; /* Ensure card content is stacked */
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+}
+
+.post-card h2, .post-card p {
+    color: black; /* Ensure headings and paragraphs are visible */
+}
+
+/* Loader styles */
+.loader {
+    text-align: center;
+    font-size: 16px;
+    color: #888;
+    padding: 20px;
+}
+
+/* Error styles */
+.error {
+    color: red;
+    text-align: center;
+}
